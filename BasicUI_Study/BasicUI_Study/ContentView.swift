@@ -12,8 +12,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("도형 만들기").font(.largeTitle).fontWeight(.heavy)
-            Text("둥근 모양").font(.title)
-            Text("각진 모양").font(.title)
+            HStack {
+                Text("둥근 모양").font(.title)
+                Spacer()
+            }
+            HStack {
+                Text("각진 모양").font(.title)
+                Spacer()
+            }
+            
         }.padding()
     }
     
