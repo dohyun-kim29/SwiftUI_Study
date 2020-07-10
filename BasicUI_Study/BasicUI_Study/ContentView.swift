@@ -29,6 +29,14 @@ struct ContentView: View {
                 Text("각진 모양").font(.title)
                 Spacer()
             }
+            ZStack {
+                Rectangle().frame(height: 10)
+                HStack {
+                    Color.red
+                    Rectangle().fill(Color.blue)
+                    RoundedRectangle(cornerRadius: 0).fill(Color.purple)
+                }
+            }
             
         }.padding()
     }
