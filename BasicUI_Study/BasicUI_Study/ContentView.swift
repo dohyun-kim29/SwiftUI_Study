@@ -16,6 +16,15 @@ struct ContentView: View {
                 Text("둥근 모양").font(.title)
                 Spacer()
             }
+            ZStack {
+                Rectangle().frame(height: 10)
+                HStack {
+                    Circle().fill(Color.yellow)
+                    Ellipse().fill(Color.green)
+                    Capsule().fill(Color.orange)
+                    RoundedRectangle(cornerRadius: 30).fill(Color.gray)
+                }
+            }
             HStack {
                 Text("각진 모양").font(.title)
                 Spacer()
