@@ -32,7 +32,7 @@ struct ContentView: View {
             ZStack {
                 Rectangle().frame(height: 10)
                 HStack {
-                    Color.red
+                    Color.red //SwiftUI에서는 컬러 그 자체도 하나의 뷰에 해당한다.
                     Rectangle().fill(Color.blue)
                     RoundedRectangle(cornerRadius: 0).fill(Color.purple)
                 }
